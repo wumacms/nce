@@ -2,7 +2,7 @@
 
 [![Stars](https://img.shields.io/github/stars/wumacms/nce.svg?style=social)](https://github.com/wumacms/nce/stargazers)
 [![License](https://img.shields.io/github/license/wumacms/nce)](https://github.com/wumacms/nce/blob/main/LICENSE)
-[![Live](https://img.shields.io/badge/Live-在线体验-brightgreen)](https://nce.net10010.cn)
+[![Live](https://img.shields.io/badge/Live-在线体验-brightgreen)](https://wumacms.github.io/nce)
 
 **《New Concept English》** 全四册在线课文朗读、**单句点读**、中英对照，随时随地自学英语！
 
@@ -16,7 +16,7 @@
 - 📱 **响应式设计**：手机、平板、电脑均可流畅使用
 - 🚀 **无需安装**：浏览器直接访问，随时学习
 
-**在线体验**：👉 **[https://nce.net10010.cn](https://nce.net10010.cn)**
+**在线体验**：👉 **[https://wumacms.github.io/nce](https://wumacms.github.io/nce)**
 
 ---
 
