@@ -1,0 +1,15 @@
+# 依赖目录（本项目无第三方依赖，保留以防后续扩展）
+node_modules/
+
+# 操作系统 / 编辑器产生的临时文件
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# WorkBuddy 本地记忆与项目数据，不属于站点内容
+.workbuddy/
+
+# 构建过程可能产生的中间文件
+*.tmp

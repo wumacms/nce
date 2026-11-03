@@ -1,0 +1,52 @@
+name: 部署到 GitHub Pages
+
+on:
+  # 推送到默认分支时自动构建并部署
+  push:
+    branches: [main]
+  # 允许在 Actions 页面手动触发
+  workflow_dispatch:
+
+# 赋予 GITHUB_TOKEN 发布 Pages 所需的权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只允许一个部署，避免并发覆盖
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 由 mp3/lrc 生成各册 static/<册>/book.json（纯 Node 内置模块，无需安装依赖）
+      - name: 生成各册 book.json
+        run: npm run build
+
+      # 上传整个站点作为 Pages 构件（upload-pages-artifact 会自动排除 .git 目录）
+      - name: 上传 Pages 构件
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

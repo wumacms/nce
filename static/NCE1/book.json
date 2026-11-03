@@ -1,0 +1,295 @@
+{
+  "name": "NCE",
+  "level": "1st Level",
+  "cover": "NCE1.jpg",
+  "units": [
+    {
+      "title": "Excuse Me｜打扰一下！",
+      "filename": "001&002－Excuse Me"
+    },
+    {
+      "title": "Sorry, Sir.｜对不起，先生。",
+      "filename": "003&004－Sorry, Sir."
+    },
+    {
+      "title": "Nice to Meet You.｜很高兴见到你。",
+      "filename": "005&006－Nice to Meet You."
+    },
+    {
+      "title": "Are You a Teacher｜你是一名老师吗？",
+      "filename": "007&008－Are You a Teacher"
+    },
+    {
+      "title": "How Are You Today｜你今天好吗？",
+      "filename": "009&010－How Are You Today"
+    },
+    {
+      "title": "Is This Your Shirt｜这是你的衬衫吗？",
+      "filename": "011&012－Is This Your Shirt"
+    },
+    {
+      "title": "A New Dress｜一条新裙子",
+      "filename": "013&014－A New Dress"
+    },
+    {
+      "title": "Your Passports, Please.｜请出示你们的护照。",
+      "filename": "015&016－Your Passports, Please."
+    },
+    {
+      "title": "How do you do｜你好！",
+      "filename": "017&018－How do you do"
+    },
+    {
+      "title": "Tired and Thirsty｜又累又渴",
+      "filename": "019&020－Tired and Thirsty"
+    },
+    {
+      "title": "Which Book｜哪本书？",
+      "filename": "021&022－Which Book"
+    },
+    {
+      "title": "Which Glasses｜哪些眼镜？",
+      "filename": "023&024－Which Glasses"
+    },
+    {
+      "title": "Mrs. Smith's Kitchen｜史密斯夫人的厨房",
+      "filename": "025&026－Mrs. Smith's Kitchen"
+    },
+    {
+      "title": "Mrs. Smith's Living Room｜史密斯夫人的客厅",
+      "filename": "027&028－Mrs. Smith's Living Room"
+    },
+    {
+      "title": "Come In, Amy.｜进来，艾米。",
+      "filename": "029&030－Come In, Amy."
+    },
+    {
+      "title": "Where's Sally｜莎莉在哪里？",
+      "filename": "031&032－Where's Sally"
+    },
+    {
+      "title": "A Fine Day｜美好的一天",
+      "filename": "033&034－A Fine Day"
+    },
+    {
+      "title": "Our Village｜我们的村庄",
+      "filename": "035&036－Our Village"
+    },
+    {
+      "title": "Making a Bookcase｜制作一个书架",
+      "filename": "037&038－Making a Bookcase"
+    },
+    {
+      "title": "Don't Drop It｜别把它掉下来！",
+      "filename": "039&040－Don't Drop It"
+    },
+    {
+      "title": "Penny's Bag｜佩妮的包",
+      "filename": "041&042－Penny's Bag"
+    },
+    {
+      "title": "Hurry Up｜快点！",
+      "filename": "043&044－Hurry Up"
+    },
+    {
+      "title": "The Boss's Letter｜老板的信",
+      "filename": "045&046－The Boss's Letter"
+    },
+    {
+      "title": "A Cup of Coffee｜一杯咖啡",
+      "filename": "047&048－A Cup of Coffee"
+    },
+    {
+      "title": "At the Butcher's｜在肉铺里",
+      "filename": "049&050－At the Butcher's"
+    },
+    {
+      "title": "A Pleasant Climate｜宜人的气候",
+      "filename": "051&052－A Pleasant Climate"
+    },
+    {
+      "title": "An Interesting Climate｜有趣的气候",
+      "filename": "053&054－An Interesting Climate"
+    },
+    {
+      "title": "The Sawyer Family｜索耶一家",
+      "filename": "055&056－The Sawyer Family"
+    },
+    {
+      "title": "An Unusual Day｜一个不同寻常的日子",
+      "filename": "057&058－An Unusual Day"
+    },
+    {
+      "title": "Is That All｜就这些吗？",
+      "filename": "059&060－Is That All"
+    },
+    {
+      "title": "A Bad Cold｜重感冒",
+      "filename": "061&062－A Bad Cold"
+    },
+    {
+      "title": "Thank You, Doctor.｜谢谢您，医生。",
+      "filename": "063&064－Thank You, Doctor."
+    },
+    {
+      "title": "Not a Baby｜我可不是小孩子了。",
+      "filename": "065&066－Not a Baby"
+    },
+    {
+      "title": "The Weekend｜周末",
+      "filename": "067&068－The Weekend"
+    },
+    {
+      "title": "The Car Race｜汽车比赛",
+      "filename": "069&070－The Car Race"
+    },
+    {
+      "title": "He's Awful｜他太糟糕了！",
+      "filename": "071&072－He's Awful"
+    },
+    {
+      "title": "The Way to King Street｜通往国王街的路",
+      "filename": "073&074－The Way to King Street"
+    },
+    {
+      "title": "Uncomfortable Shoes｜不舒服的鞋子",
+      "filename": "075&076－Uncomfortable Shoes"
+    },
+    {
+      "title": "Terrible Toothache｜牙痛太厉害了！",
+      "filename": "077&078－Terrible Toothache"
+    },
+    {
+      "title": "Carol's Shopping List｜卡罗尔的购物清单",
+      "filename": "079&080－Carol's Shopping List"
+    },
+    {
+      "title": "Roast Beef and Potatoes｜烤牛肉配土豆",
+      "filename": "081&082－Roast Beef and Potatoes"
+    },
+    {
+      "title": "Going on Holiday｜去度假",
+      "filename": "083&084－Going on Holiday"
+    },
+    {
+      "title": "Paris in the Spring.｜《春天的巴黎》。",
+      "filename": "085&086－Paris in the Spring."
+    },
+    {
+      "title": "A Car Crash｜车祸",
+      "filename": "087&088－A Car Crash"
+    },
+    {
+      "title": "For Sale｜待售",
+      "filename": "089&090－For Sale"
+    },
+    {
+      "title": "Poor Ian｜可怜的伊恩！",
+      "filename": "091&092－Poor Ian"
+    },
+    {
+      "title": "Our New Neighbour｜我们的新邻居",
+      "filename": "093&094－Our New Neighbour"
+    },
+    {
+      "title": "Tickets, Please.｜请给我票。",
+      "filename": "095&096－Tickets, Please."
+    },
+    {
+      "title": "A Small Blue Case｜一个蓝色的小箱子。",
+      "filename": "097&098－A Small Blue Case"
+    },
+    {
+      "title": "Ow｜哎哟！",
+      "filename": "099&100－Ow"
+    },
+    {
+      "title": "A Card From Jimmy｜一张来自吉米的卡片",
+      "filename": "101&102－A Card From Jimmy"
+    },
+    {
+      "title": "The French Test｜法语测试",
+      "filename": "103&104－The French Test"
+    },
+    {
+      "title": "Full of Mistakes｜满是错误",
+      "filename": "105&106－Full of Mistakes"
+    },
+    {
+      "title": "It's Too Small.｜它太小了。",
+      "filename": "107&108－It's Too Small."
+    },
+    {
+      "title": "A Good Idea｜一个好主意",
+      "filename": "109&110－A Good Idea"
+    },
+    {
+      "title": "The Most Expensive Model｜最昂贵的型号",
+      "filename": "111&112－The Most Expensive Model"
+    },
+    {
+      "title": "Small Change｜零钱；小额货币",
+      "filename": "113&114－Small Change"
+    },
+    {
+      "title": "Knock, Knock｜咚咚！",
+      "filename": "115&116－Knock, Knock"
+    },
+    {
+      "title": "Tommy's Breakfast｜汤米的早餐",
+      "filename": "117&118－Tommy's Breakfast"
+    },
+    {
+      "title": "A True Story｜一个真实的故事",
+      "filename": "119&120－A True Story"
+    },
+    {
+      "title": "The Man in a Hat｜戴帽子的男子",
+      "filename": "121&122－The Man in a Hat"
+    },
+    {
+      "title": "A Trip to Australia｜澳大利亚之旅",
+      "filename": "123&124－A Trip to Australia"
+    },
+    {
+      "title": "Tea for Two｜“Tea for two” 的意思是“为两个人准备的茶”。",
+      "filename": "125&126－Tea for Two"
+    },
+    {
+      "title": "A Famous Actress｜一位著名的女演员",
+      "filename": "127&128－A Famous Actress"
+    },
+    {
+      "title": "Seventy Miles an Hour｜每小时七十英里",
+      "filename": "129&130－Seventy Miles an Hour"
+    },
+    {
+      "title": "Don't be So Sure｜别那么确定！",
+      "filename": "131&132－Don't be So Sure"
+    },
+    {
+      "title": "Sensational News｜惊人的新闻！",
+      "filename": "133&134－Sensational News"
+    },
+    {
+      "title": "The Latest Report｜最新报告",
+      "filename": "135&136－The Latest Report"
+    },
+    {
+      "title": "A Pleasant Dream｜一个美好的梦想",
+      "filename": "137&138－A Pleasant Dream"
+    },
+    {
+      "title": "Is That You, John｜那是你吗，约翰？",
+      "filename": "139&140－Is That You, John"
+    },
+    {
+      "title": "Sally's First Train Ride｜莎莉的第一次火车旅行",
+      "filename": "141&142－Sally's First Train Ride"
+    },
+    {
+      "title": "A Walk Through the Woods｜在树林中散步",
+      "filename": "143&144－A Walk Through the Woods"
+    }
+  ]
+}

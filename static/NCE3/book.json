@@ -1,0 +1,247 @@
+{
+  "name": "NCE",
+  "level": "3rd Level",
+  "cover": "NCE3.jpg",
+  "units": [
+    {
+      "title": "A Puma at Large｜逃遁的美洲狮",
+      "filename": "01－A Puma at Large"
+    },
+    {
+      "title": "Thirteen Equals One｜十三等于一",
+      "filename": "02－Thirteen Equals One"
+    },
+    {
+      "title": "An Unknown Goddess｜一位未知的女神",
+      "filename": "03－An Unknown Goddess"
+    },
+    {
+      "title": "The Double Life of Alfred Bloggs｜阿尔弗雷德·布洛格斯的双重生活",
+      "filename": "04－The Double Life of Alfred Bloggs"
+    },
+    {
+      "title": "The Facts｜事实",
+      "filename": "05－The Facts"
+    },
+    {
+      "title": "Smash-and-Grab｜砸窗抢劫",
+      "filename": "06－Smash-and-Grab"
+    },
+    {
+      "title": "Mutilated Ladies｜残币清点小组",
+      "filename": "07－Mutilated Ladies"
+    },
+    {
+      "title": "A Famous Monastery｜一座著名的修道院",
+      "filename": "08－A Famous Monastery"
+    },
+    {
+      "title": "Flying Cats｜会飞的猫",
+      "filename": "09－Flying Cats"
+    },
+    {
+      "title": "The Loss of the Titanic｜泰坦尼克号的沉没",
+      "filename": "10－The Loss of the Titanic"
+    },
+    {
+      "title": "Not Guilty｜“无罪”",
+      "filename": "11－Not Guilty"
+    },
+    {
+      "title": "Life on a Desert Island｜荒岛上的生活",
+      "filename": "12－Life on a Desert Island"
+    },
+    {
+      "title": "It's Only Me｜“是我。”",
+      "filename": "13－It's Only Me"
+    },
+    {
+      "title": "A Noble Gangster｜一位高尚的强盗",
+      "filename": "14－A Noble Gangster"
+    },
+    {
+      "title": "Fifty Pence Worth of Trouble｜五十便士的“代价”",
+      "filename": "15－Fifty Pence Worth of Trouble"
+    },
+    {
+      "title": "Mary Had a Little Lamb｜玛丽有一只小羊羔。",
+      "filename": "16－Mary Had a Little Lamb"
+    },
+    {
+      "title": "The Longest Suspension Bridge in the World｜世界上最长的悬索桥",
+      "filename": "17－The Longest Suspension Bridge in the World"
+    },
+    {
+      "title": "Electric Currents in Modern Art｜现代艺术中的电流（注：此处“electric currents”可能为比喻，实际含义需结合上下文确定）",
+      "filename": "18－Electric Currents in Modern Art"
+    },
+    {
+      "title": "A Very Dear Cat｜一只非常珍贵的猫",
+      "filename": "19－A Very Dear Cat"
+    },
+    {
+      "title": "Pioneer Pilots｜先锋飞行员",
+      "filename": "20－Pioneer Pilots"
+    },
+    {
+      "title": "Daniel Mendoza｜丹尼尔·门多萨",
+      "filename": "21－Daniel Mendoza"
+    },
+    {
+      "title": "By Heart｜牢记在心；熟记",
+      "filename": "22－By Heart"
+    },
+    {
+      "title": "One Man's Meat is Another Man's Poison｜一个人的佳肴，另一个人的毒药。",
+      "filename": "23－One Man's Meat is Another Man's Poison"
+    },
+    {
+      "title": "A Skeleton in the Cupboard｜柜中骷髅（比喻不可告人的秘密）",
+      "filename": "24－A Skeleton in the Cupboard"
+    },
+    {
+      "title": "The Cutty Sark｜“Cutty Sark”是一艘著名的帆船，以其独特的船型和卓越的航海性能而闻名于世。",
+      "filename": "25－The Cutty Sark"
+    },
+    {
+      "title": "Wanted a Large Biscuit Tin｜征购：一个大号的饼干盒",
+      "filename": "26－Wanted a Large Biscuit Tin"
+    },
+    {
+      "title": "Nothing to Sell and Nothing to Buy｜没有什么可以卖的，也没有什么可以买的。",
+      "filename": "27－Nothing to Sell and Nothing to Buy"
+    },
+    {
+      "title": "Five Pounds Too Dear｜贵了五英镑",
+      "filename": "28－Five Pounds Too Dear"
+    },
+    {
+      "title": "Funny or Not｜好笑还是不好笑？",
+      "filename": "29－Funny or Not"
+    },
+    {
+      "title": "The Death of a Ghost｜一个“幽灵”的死亡",
+      "filename": "30－The Death of a Ghost"
+    },
+    {
+      "title": "A Lovable Eccentric｜一个可爱的怪人",
+      "filename": "31－A Lovable Eccentric"
+    },
+    {
+      "title": "A Lost Ship｜一艘失踪的船只",
+      "filename": "32－A Lost Ship"
+    },
+    {
+      "title": "A Day to Remember｜一个值得铭记的日子",
+      "filename": "33－A Day to Remember"
+    },
+    {
+      "title": "A Happy Discovery｜一个令人高兴的发现",
+      "filename": "34－A Happy Discovery"
+    },
+    {
+      "title": "Justice was Done｜正义得到了伸张。",
+      "filename": "35－Justice was Done"
+    },
+    {
+      "title": "A Chance in a Million｜百万分之一的机会",
+      "filename": "36－A Chance in a Million"
+    },
+    {
+      "title": "The Westhaven Express｜西黑文特快列车",
+      "filename": "37－The Westhaven Express"
+    },
+    {
+      "title": "The First Calendar｜第一个日历",
+      "filename": "38－The First Calendar"
+    },
+    {
+      "title": "Nothing to Worry About｜没什么好担心的。",
+      "filename": "39－Nothing to Worry About"
+    },
+    {
+      "title": "Who's Who｜谁是谁？",
+      "filename": "40－Who's Who"
+    },
+    {
+      "title": "Illusions of Pastoral Peace｜田园宁静的假象",
+      "filename": "41－Illusions of Pastoral Peace"
+    },
+    {
+      "title": "Modern Cavemen｜现代“穴居人”",
+      "filename": "42－Modern Cavemen"
+    },
+    {
+      "title": "Fully Insured｜全面投保",
+      "filename": "43－Fully Insured"
+    },
+    {
+      "title": "Speed and Comfort｜速度与舒适性",
+      "filename": "44－Speed and Comfort"
+    },
+    {
+      "title": "The Power of the Press｜媒体的力量",
+      "filename": "45－The Power of the Press"
+    },
+    {
+      "title": "Do It Yourself｜自己动手做吧。",
+      "filename": "46－Do It Yourself"
+    },
+    {
+      "title": "Too High a Price｜代价是否太高？",
+      "filename": "47－Too High a Price"
+    },
+    {
+      "title": "The Silent Village｜寂静的村庄",
+      "filename": "48－The Silent Village"
+    },
+    {
+      "title": "The Ideal Servant｜理想的仆人",
+      "filename": "49－The Ideal Servant"
+    },
+    {
+      "title": "New Year Resolutions｜新年决心",
+      "filename": "50－New Year Resolutions"
+    },
+    {
+      "title": "Predicting the Future｜预测未来",
+      "filename": "51－Predicting the Future"
+    },
+    {
+      "title": "Mud is Mud｜泥就是泥；无论它在哪里，本质都是一样的。",
+      "filename": "52－Mud is Mud"
+    },
+    {
+      "title": "In the Public Interest｜为了公共利益",
+      "filename": "53－In the Public Interest"
+    },
+    {
+      "title": "Instinct or Cleverness｜是本能，还是智慧？",
+      "filename": "54－Instinct or Cleverness"
+    },
+    {
+      "title": "From the Earth Greetings｜来自地球的问候：",
+      "filename": "55－From the Earth Greetings"
+    },
+    {
+      "title": "Our Neighbour, the River｜我们的邻居——河流",
+      "filename": "56－Our Neighbour, the River"
+    },
+    {
+      "title": "Back in the Old Country｜回到故乡",
+      "filename": "57－Back in the Old Country"
+    },
+    {
+      "title": "A Spot of Bother｜一个小麻烦；一点小问题。",
+      "filename": "58－A Spot of Bother"
+    },
+    {
+      "title": "Collecting｜收藏",
+      "filename": "59－Collecting"
+    },
+    {
+      "title": "Too Early and Too Late｜太早与太晚",
+      "filename": "60－Too Early and Too Late"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "nce-reading",
+  "version": "1.0.0",
+  "private": true,
+  "description": "新概念英语在线点读系统 — 纯静态站点",
+  "scripts": {
+    "build": "node scripts/generate-book-json.js",
+    "generate:books": "node scripts/generate-book-json.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
