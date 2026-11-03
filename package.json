@@ -1,13 +1,30 @@
 {
   "name": "nce-reading",
-  "version": "1.0.0",
   "private": true,
-  "description": "新概念英语在线点读系统 — 纯静态站点",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "新概念英语在线点读系统 — Vue3 + Vite + TypeScript + TailwindCSS 4",
   "scripts": {
-    "build": "node scripts/generate-book-json.js",
-    "generate:books": "node scripts/generate-book-json.js"
+    "generate:books": "node scripts/generate-book-json.cjs",
+    "prebuild": "node scripts/generate-book-json.cjs",
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.5",
+    "vue-tsc": "^3.3.13"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   }
 }

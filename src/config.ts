@@ -1,5 +1,5 @@
 /**
- * 全局常量
+ * 全局常量与初始状态
  * @module config
  */
 
@@ -14,7 +14,7 @@ export const CONFIG = {
     THEME: 'theme',
   },
 
-  AVAILABLE_SPEEDS: [0.5, 0.75, 1.0, 1.25, 1.5, 2.0],
+  AVAILABLE_SPEEDS: [0.5, 0.75, 1.0, 1.25, 1.5, 2.0] as number[],
   TRANSLATION_MODES: ['show', 'english', 'chinese', 'blur'],
   LOOP_MODES: ['off', 'click', 'one', 'list', 'book'],
 
@@ -38,14 +38,37 @@ export const CONFIG = {
     NO_DATA: '未找到可用课本数据',
     LOAD_FAILED: '加载失败',
   },
-};
+} as const;
 
-export function createInitialState() {
+export interface ReadingState {
+  books: Array<{ key: string; title: string; path: string }>;
+  units: Array<{ id: number; title: string; filename: string; audio: string; lrc: string }>;
+  bookPath: string;
+  bookKey: string;
+  bookName: string;
+  bookLevel: string;
+  coverUrl: string;
+  emptyMessage: string;
+  currentLyrics: Array<{ time: number; english: string; chinese: string; fullText: string }>;
+  currentLyricIndex: number;
+  currentUnitIndex: number;
+  loopMode: 'off' | 'click' | 'one' | 'list' | 'book';
+  playbackRate: number;
+  translationMode: 'show' | 'english' | 'chinese' | 'blur';
+  sentenceLoopIndex: number;
+  resumeTime: number;
+}
+
+export function createInitialState(): ReadingState {
   return {
     books: [],
     units: [],
     bookPath: '',
     bookKey: '',
+    bookName: '选择课本',
+    bookLevel: '',
+    coverUrl: '',
+    emptyMessage: '',
     currentLyrics: [],
     currentLyricIndex: -1,
     currentUnitIndex: -1,

@@ -1,12 +1,12 @@
 /**
  * 下一课歌词 / 音频预加载
- * @module services/PrefetchService
+ * @module services/prefetch
  */
 
-import { CacheManager } from '../managers/CacheManager.js';
+import { CacheManager } from '../managers/CacheManager';
+import type { Unit } from '../types';
 
-function disposeAudio(audio) {
-  if (!audio) return;
+function disposeAudio(audio: HTMLAudioElement): void {
   try {
     audio.pause();
     audio.removeAttribute('src');
@@ -17,22 +17,17 @@ function disposeAudio(audio) {
 }
 
 export class PrefetchService {
-  /**
-   * @param {{maxLrc?: number, maxAudio?: number}} [options]
-   */
-  constructor(options = {}) {
+  private readonly lrcCache: CacheManager<string, string>;
+  private readonly audioCache: CacheManager<string, HTMLAudioElement>;
+  private readonly inFlight = new Map<string, Promise<void>>();
+  private epoch = 0; // clear() 时递增，用于丢弃过期回写（防切书后脏缓存）
+
+  constructor(options: { maxLrc?: number; maxAudio?: number } = {}) {
     this.lrcCache = new CacheManager(options.maxLrc ?? 3);
     this.audioCache = new CacheManager(options.maxAudio ?? 3, disposeAudio);
-    this.inFlight = new Map(); // url -> Promise，去重在途预取请求
-    this.epoch = 0; // clear() 时递增，用于丢弃过期回写（防切书后脏缓存）
   }
 
-  /**
-   * @param {string} url
-   * @param {AbortSignal} [signal]
-   * @returns {Promise<string>}
-   */
-  async loadLrc(url, signal) {
+  async loadLrc(url: string, signal?: AbortSignal): Promise<string> {
     const cached = this.lrcCache.get(url);
     if (cached !== undefined) return cached;
 
@@ -45,10 +40,7 @@ export class PrefetchService {
     return text;
   }
 
-  /**
-   * @param {{lrc?: string, audio?: string}|null} unit
-   */
-  prefetch(unit) {
+  prefetch(unit: Unit | null | undefined): void {
     if (!unit) return;
     const epoch = this.epoch;
 
@@ -60,11 +52,11 @@ export class PrefetchService {
         })
         .then((text) => {
           // 期间若发生 clear()（如切书），丢弃过期结果
-          if (epoch === this.epoch) this.lrcCache.set(unit.lrc, text);
+          if (epoch === this.epoch) this.lrcCache.set(unit.lrc as string, text);
         })
         .catch(() => {})
         .finally(() => {
-          this.inFlight.delete(unit.lrc);
+          this.inFlight.delete(unit.lrc as string);
         });
       this.inFlight.set(unit.lrc, task);
     }
@@ -77,7 +69,7 @@ export class PrefetchService {
     }
   }
 
-  clear() {
+  clear(): void {
     this.epoch += 1;
     this.inFlight.clear();
     this.lrcCache.clear();

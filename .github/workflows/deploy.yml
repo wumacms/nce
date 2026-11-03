@@ -25,20 +25,30 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
+      - name: 设置 pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: pnpm
 
-      # 由 mp3/lrc 生成各册 static/<册>/book.json（纯 Node 内置模块，无需安装依赖）
-      - name: 生成各册 book.json
-        run: npm run build
+      - name: 安装依赖
+        run: pnpm install --frozen-lockfile
 
-      # 上传整个站点作为 Pages 构件（upload-pages-artifact 会自动排除 .git 目录）
+      # 预构建：由 mp3/lrc 生成各册 static/<册>/book.json（纯 Node 内置模块）
+      # 随后 vue-tsc 类型检查 + vite 构建，产物输出到 dist/
+      - name: 构建站点
+        run: pnpm build
+
+      # 上传 dist 作为 Pages 构件（upload-pages-artifact 会自动排除 .git 目录）
       - name: 上传 Pages 构件
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
 
   deploy:
     needs: build

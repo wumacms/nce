@@ -9,7 +9,7 @@
  * - mp3 与 lrc 必须成对存在，缺失即报错退出
  * - 可选参数 --expect N：校验单元数量（如 NCE1 期望 72）
  *
- * 用法：node scripts/generate-book-json.js [NCE1 NCE2 ...]
+ * 用法：node scripts/generate-book-json.cjs [NCE1 NCE2 ...]
  */
 const fs = require('fs');
 const path = require('path');

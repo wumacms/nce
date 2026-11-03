@@ -1,9 +1,9 @@
 /**
- * localStorage 读写
+ * localStorage 读写与播放进度记忆
  * @module utils/storage
  */
 
-export function getStorage(key, defaultValue = null) {
+export function getStorage(key: string, defaultValue: string | null = null): string | null {
   try {
     const item = localStorage.getItem(key);
     return item !== null ? item : defaultValue;
@@ -13,7 +13,7 @@ export function getStorage(key, defaultValue = null) {
   }
 }
 
-export function setStorage(key, value) {
+export function setStorage(key: string, value: string | number | boolean): boolean {
   try {
     localStorage.setItem(key, String(value));
     return true;
@@ -23,26 +23,26 @@ export function setStorage(key, value) {
   }
 }
 
-export function getPlayTime(bookKey, unitIndex) {
+export function getPlayTime(bookKey: string, unitIndex: number): number {
   const value = getStorage(`${bookKey}/${unitIndex}/playTime`);
   if (!value) return 0;
   const parsed = parseFloat(value);
   return Number.isFinite(parsed) ? parsed : 0;
 }
 
-export function savePlayTime(bookKey, unitIndex, time) {
+export function savePlayTime(bookKey: string, unitIndex: number, time: number): void {
   if (!bookKey || unitIndex < 0 || !Number.isFinite(time)) return;
   setStorage(`${bookKey}/${unitIndex}/playTime`, time);
 }
 
-export function getCurrentUnitIndex(bookKey) {
+export function getCurrentUnitIndex(bookKey: string): number {
   const value = getStorage(`${bookKey}/currentUnitIndex`);
   if (!value) return 0;
   const parsed = parseInt(value, 10);
   return Number.isFinite(parsed) ? Math.max(0, parsed) : 0;
 }
 
-export function saveCurrentUnitIndex(bookKey, index) {
+export function saveCurrentUnitIndex(bookKey: string, index: number): void {
   if (!bookKey) return;
   setStorage(`${bookKey}/currentUnitIndex`, index);
 }

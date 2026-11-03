@@ -1,20 +1,22 @@
 /**
  * LRC 歌词解析：`[mm:ss.xx]英文 | 中文`
- * @module utils/LRCParser
+ * @module utils/lrc
  */
+
+import type { Lyric } from '../types';
 
 const LYRIC_TIME_REGEX = /^\[(\d{1,2}):(\d{2})\.(\d{2,3})\](.*)/;
 
 export class LRCParser {
   /**
-   * @param {string} lrcText
-   * @param {number} [timeOffset=0]
-   * @returns {Array<{time: number, english: string, chinese: string, fullText: string}>}
+   * @param lrcText
+   * @param timeOffset 全局时间偏移（秒）
+   * @returns 解析后的歌词数组（按时间升序）
    */
-  static parse(lrcText, timeOffset = 0) {
+  static parse(lrcText: string, timeOffset = 0): Lyric[] {
     if (!lrcText || typeof lrcText !== 'string') return [];
 
-    const lyrics = [];
+    const lyrics: Lyric[] = [];
 
     for (const raw of lrcText.split('\n')) {
       const line = raw.trim();
@@ -52,12 +54,9 @@ export class LRCParser {
   }
 
   /**
-   * 歌词按 time 升序，二分查找最后一条 time <= currentTime 的索引
-   * @param {Array<{time: number}>} lyrics
-   * @param {number} currentTime
-   * @returns {number}
+   * 二分查找最后一条 time <= currentTime 的索引
    */
-  static findLyricIndexByTime(lyrics, currentTime) {
+  static findLyricIndexByTime(lyrics: Lyric[], currentTime: number): number {
     if (!Array.isArray(lyrics) || lyrics.length === 0) return -1;
 
     let lo = 0;
@@ -76,18 +75,20 @@ export class LRCParser {
   }
 
   /**
-   * @param {Array<{time: number}>} lyrics
-   * @param {number} index
-   * @param {number} [audioDuration=0]
-   * @returns {{startTime: number, endTime: number, index: number}|null}
+   * 取第 index 句的时间边界 [startTime, endTime)
    */
-  static getSentenceBoundaries(lyrics, index, audioDuration = 0) {
+  static getSentenceBoundaries(
+    lyrics: Lyric[],
+    index: number,
+    audioDuration = 0,
+  ): { startTime: number; endTime: number; index: number } | null {
     if (!Array.isArray(lyrics) || index < 0 || index >= lyrics.length) return null;
 
     const startTime = lyrics[index].time;
-    const endTime = index < lyrics.length - 1
-      ? lyrics[index + 1].time
-      : Math.max(audioDuration, startTime + 0.1);
+    const endTime =
+      index < lyrics.length - 1
+        ? lyrics[index + 1].time
+        : Math.max(audioDuration, startTime + 0.1);
 
     return { startTime, endTime, index };
   }
